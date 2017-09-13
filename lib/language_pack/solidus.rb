@@ -36,7 +36,7 @@ class LanguagePack::Solidus < LanguagePack::Rails5
     # We add solidus to the Gemfile, and some other heroku niceties
     File.open("Gemfile", 'a') do |f|
       f.puts <<-GEMFILE
-gem 'solidus', :path => '.'
+gem 'solidus'
 gem 'solidus_auth_devise'
 
 gem 'rails_12factor'
